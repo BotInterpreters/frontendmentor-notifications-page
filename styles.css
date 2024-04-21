@@ -7,6 +7,7 @@
 
 body {
     background-color: hsl(210, 60%, 98%);
+    width: 100%;
 }
 
 .notification-heading {
@@ -17,7 +18,7 @@ body {
 }
 
 .notification-count {
-    background-color:hsl(219, 85%, 26%);
+    background-color: hsl(219, 85%, 26%);
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
     height: 30px;
@@ -33,6 +34,45 @@ body {
     font-size: 16px;
     color: hsl(219, 12%, 42%);
     font-weight: 500;
+}
+
+.mark-as-read:hover {
+    cursor: pointer;
+}
+
+.mark-as-read-pointer {
+    position: relative;
+    left: -100px;
+    top: 10px;
+    display: none;
+}
+
+.first-tournament-cursor {
+    position: relative;
+    left: -120px;
+    top: 5px;
+    display: none;
+}
+
+.angela-cursor {
+    position: relative;
+    left: -190px;
+    top: 10px;
+    display: none;
+}
+
+.chess-pointer {
+    position: relative;
+    left: -65px;
+    top: 5px;
+    display: none;
+}
+
+.inner-pointer{
+    position: relative;
+    left: -105px;
+    top: 30px;
+    display: none;
 }
 
 .notifications-container {
@@ -91,7 +131,7 @@ body {
     font-size: 1.5em;
     color: red;
     margin-left: 5px;
-    vertical-align:baseline
+    vertical-align: baseline
 }
 
 .notification-content .notification-text {
@@ -115,6 +155,7 @@ body {
     border: 1px solid #E4E8EB;
     padding: 1rem;
     width: 90%;
+    /* background-color: #E5EFF9; */
 }
 
 .chest-image-container {
@@ -131,3 +172,67 @@ body {
     height: 65px;
     padding: 0.5rem;
 }
+
+.coded-by-span {
+    color: hsl(224, 21%, 14%);;
+}
+
+.coded-by-link {
+    color: #ffffff;
+}    
+
+.coded-by-text {
+    padding: 15px 15px;
+    border: unset;
+    border-radius: 15px;
+    color: hsl(224, 21%, 14%);;
+    z-index: 1;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+.coded-by-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: hsl(224, 21%, 14%);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+}
+
+.coded-by-text:hover {
+    color: #fff;
+}
+
+.coded-by-text:hover::before {
+    width: 100%;
+}
+
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+    
+.notifications-container {
+    max-width: 800px;
+    height: auto;
+    margin: 0;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 0rem 2rem;
+}
+
+.private-message {
+    width: 80%;
+}
+
+}
+

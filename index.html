@@ -27,18 +27,21 @@
         <span class="notification-count">3</span>
       </div>
       <div class="col-6 g-0 text-end">
-        <span class="mark-as-read">Mark as all read</span>
+        <span class="mark-as-read" onclick="toggleCursor()">Mark as all read</span>
+        <img class="mark-as-read-pointer" src="assets/images/hand-pointer.png">
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 notification-column">
         <div class="notification-content">
-          <img src="/assets/images/avatar-mark-webber.webp" alt="" class="user-avatar">
+          <img src="assets/images/avatar-mark-webber.webp" alt="" class="user-avatar">
           <div class="notification-text">
             <span><strong>Mark Webber</strong></span>
             <span class="span-reaction">reacted to your recent post</span>
             <span class="bullet-point">My first tournament today</span>
+            <img class="first-tournament-cursor" src="assets/images/hand-pointer.png">
+
             <br>
             <span class="time-stamp">1min ago</span>
           </div>
@@ -49,9 +52,13 @@
     <div class="row">
       <div class="col-12 notification-column">
         <div class="notification-content">
-          <img src="/assets/images/avatar-angela-gray.webp" alt="" class="user-avatar">
+          <img src="assets/images/avatar-angela-gray.webp" alt="" class="user-avatar">
           <div class="notification-text">
-            <span><strong>Angela Gray</strong> </span> <span class="bullet-point"> followed you</span>
+            <span>
+              <strong>Angela Gray</strong>
+            </span>
+            <span class="bullet-point"> followed you</span>
+            <img class="angela-cursor" src="assets/images/hand-pointer.png">
             <br>
             <span class="time-stamp">5min ago</span>
           </div>
@@ -62,9 +69,11 @@
     <div class="row">
       <div class="col-12 notification-column">
         <div class="notification-content">
-          <img src="/assets/images/avatar-jacob-thompson.webp" alt="" class="user-avatar">
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="" class="user-avatar">
           <div class="notification-text">
-            <span><strong>Jacob Thompson</strong> </span> <span class="span-reaction"> has joined your group</span> <span class="bullet-point">Chess Club</span>
+            <span><strong>Jacob Thompson</strong> </span> <span class="span-reaction"> has joined your group</span>
+            <span class="bullet-point">Chess Club</span>
+            <img class="chess-pointer" src="assets/images/hand-pointer.png">
             <br>
             <span class="time-stamp">1 day ago</span>
           </div>
@@ -76,38 +85,37 @@
     <div class="row">
       <div class="col-12 notification-column">
         <div class="notification-content">
-          <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="user-avatar">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" class="user-avatar">
           <div class="notification-text">
-            <span><strong>Rizky Hasanuddin</strong></span> <span class="span-reaction">sent yo a private message</span> 
+            <span><strong>Rizky Hasanuddin</strong></span> <span class="span-reaction">sent yo a private message</span>
             <br>
             <span class="time-stamp">1 day ago</span>
           </div>
         </div>
         <div class="private-message">
-          <spanp>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          <span>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
             I'm already having lots of fun and improving my game. </span>
+          <img class="inner-pointer" src="assets/images/hand-pointer.png">
         </div>
       </div>
     </div>
-
-
-
 
     <div class="row">
       <div class="col-12 notification-column">
         <div class="row">
           <div class="col-9">
             <div class="notification-content">
-              <img src="/assets/images/avatar-kimberly-smith.webp" alt="" class="user-avatar">
+              <img src="assets/images/avatar-kimberly-smith.webp" alt="" class="user-avatar">
               <div class="notification-text">
-                <span><strong>Kimberly Smith</strong></span> <span class="span-reaction">commented on your picture</span> 
+                <span><strong>Kimberly Smith</strong></span> <span class="span-reaction">commented on your
+                  picture</span>
                 <br>
                 <span class="time-stamp">1 day ago</span>
               </div>
             </div>
           </div>
           <div class="col-3 chest-image-container">
-            <img src="/assets/images/image-chess.webp" alt="" class="chess-image">
+            <img src="assets/images/image-chess.webp" alt="" class="chess-image">
           </div>
         </div>
       </div>
@@ -116,9 +124,10 @@
     <div class="row">
       <div class="col-12 notification-column">
         <div class="notification-content">
-          <img src="/assets/images/avatar-nathan-peterson.webp" alt="" class="user-avatar">
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="" class="user-avatar">
           <div class="notification-text">
-            <span><strong>Nathan Peterson</strong> </span> <span class="span-reaction"> reacted to your recent post</span> <span class="bullet-point">5 end-games strategies to increase your win rate</span>
+            <span><strong>Nathan Peterson</strong> </span> <span class="span-reaction"> reacted to your recent
+              post</span> <span class="bullet-point">5 end-games strategies to increase your win rate</span>
             <br>
             <span class="time-stamp">2 weeks ago</span>
           </div>
@@ -129,22 +138,30 @@
     <div class="row">
       <div class="col-12 notification-column">
         <div class="notification-content">
-          <img src="/assets/images/avatar-anna-kim.webp" alt="" class="user-avatar">
+          <img src="assets/images/avatar-anna-kim.webp" alt="" class="user-avatar">
           <div class="notification-text">
-            <span><strong>Anna Kim</strong> </span> <span class="span-reaction">left the group</span> <span class="bullet-point">Chess Club</span>
+            <span><strong>Anna Kim</strong> </span> <span class="span-reaction">left the group</span> <span
+              class="bullet-point">Chess Club</span>
             <br>
             <span class="time-stamp">2 weeks ago</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="attribution text-center mt-5 mb-5">
+    <span class="coded-by-span">Challenge by</span>
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" style="color: hsl(224, 21%, 14%)">Frontend
+      Mentor</a> <span class="coded-by-span"> Coded by, </span><a href="https://github.com/BotInterpreters"
+      class="coded-by-text"> John Ericson Dulay</a>
+  </div>
 
 
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
